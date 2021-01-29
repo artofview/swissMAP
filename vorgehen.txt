@@ -1,0 +1,49 @@
+1. Shapefiles wählen -> *.shp (z.B. unter C:\Repos\Privat\swissBOUNDARIES3D\BOUNDARIES_2020\DATEN\swissBOUNDARIES3D\SHAPEFILE_LV95_LN02)
+2. Mit https://mapshaper.org/ kann das *.shp File getestet werden (oder auch mit https://qgis.org/de/site/)
+3. GeoTransformationssysteme in der Schweiz -> https://epsg.io/2056 (LV95 oder LV03)
+   https://www.swisstopo.admin.ch/de/wissen-fakten/geodaesie-vermessung/bezugsrahmen/lokal/lv95.html
+   https://www.swisstopo.admin.ch/de/wissen-fakten/geodaesie-vermessung/bezugsrahmen/lokal/lv03.html
+   LV  : LandesVermessung (LV95 = LV aus dem Jahre 1995, LV03 aus dem Jahre 1903)
+   LHN : LandesHöhenNetz
+   Eine Einheit entspricht 1 Meter!
+   Nach LV03:
+   Bern: y=600000, x=200000 (Sidlerstr. 5, 3012 Bern, Universität Bern, Exakte Wissenschaften; WGS84: 46.9510827861504654, 7.4386324175389165)
+   Rigi: y=679520, x=212273 (heisst: 79,520km östlich und 12,273 nördlich von Bern)
+4. Shapefile (*.shp) nach GeoJSON formatieren
+
+
+Shapefile:
+https://de.wikipedia.org/wiki/Shapefile
+http://giswiki.org/wiki/Shape-Datei
+https://www.esri.com/library/whitepapers/pdfs/shapefile.pdf
+https://www.e-education.psu.edu/geog863_gmaps/l5_p3.html
+
+Shape to GeoJSON:
+https://mygeodata.cloud/converter/shp-to-geojson
+https://www.statsilk.com/maps/convert-esri-shapefile-map-geojson-format
+https://www.igismap.com/different-ways-to-convert-shapefile-to-geojson-online-or-offline-or-api/
+https://gis.stackexchange.com/questions/91812/convert-shapefiles-to-geojson
+https://vallandingham.me/shapefile_to_geojson.html
+
+Koordinatensysteme:
+https://de.wikipedia.org/wiki/Schweizer_Landeskoordinaten
+https://en.wikipedia.org/wiki/Swiss_coordinate_system
+https://www.swisstopo.admin.ch/de/karten-daten-online/calculation-services/reframe.html
+https://www.swisstopo.admin.ch/de/karten-daten-online/calculation-services/m2m.html#dokumente_und_publik
+
+GeoJSON
+https://de.wikipedia.org/wiki/GeoJSON
+TopoJSON (
+https://d3js.org/topojson.v1.js
+https://d3js.org/topojson.v1.min.js
+
+TopoJSON ist ein optimiertes Format von GeoJSON welches redundante Polygoninformationen zusammenfasst und damit bis zu 80%
+kleiner Dateien erzeugt, welche die Geschwindigkeit im Web deutlich erhöhen.
+Entwickelt von Mike Bostock, dem Gründer/Autor von D3.js. 
+https://books.google.ch/books?id=O7bjCwAAQBAJ&pg=PA161&lpg=PA161&dq=topojson+wiki&source=bl&ots=0uCDZA-kIW&sig=ACfU3U1Z3xVHIZOiOMpVGD5QOshsS4JfFQ&hl=de&sa=X&ved=2ahUKEwiMt8ic7crpAhUIy4UKHdqVBpoQ6AEwA3oECAcQAQ#v=onepage&q=topojson%20wiki&f=false
+  
+JSON Editor:
+https://jsonformatter.org/
+ 
+Beispiele:
+https://observablehq.com/@d3/choropleth

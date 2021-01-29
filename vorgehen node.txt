@@ -1,0 +1,39 @@
+Übersicht: https://blog.codecentric.de/2017/09/ein-blick-auf-npm-und-package-json/
+
+https://docs.npmjs.com/cli/install
+
+1. Erstellt ein package.json File (https://docs.npmjs.com/cli/init) :
+npm init
+
+2. Installieren von Package <shapefile> (https://blog.az.sg/posts/mapping-switzerland-1/ und https://www.npmjs.com/package/shapefile) :
+npm install shapefile
+-> Installierte Package werden im package.json unter "dependencies" mit der aktuellen Version hinterlegt
+-> Die Packages und Dependencies werden in einem neuen Verzeichnis unter "node_modules" im Projektordner abgelegt
+
+3. Ausführen (Debugging starten)
+-> das Ausgabefile (geo.json) wird erstellt
+
+4.a. mit mapshaper.org kann die Genauigkeit und damit die Grösse der Datei beinflusst werden
+-> Export auch als TopoJSON möglich!
+
+4.b. mit topojson-Server (Bessere Varianten da kleinere Files und trotzdem Details bestehen bleiben da Redundanzen per Referenz abgelegt werden)
+-> npm install topojson-server
+-> von 1.1 MB auf ca. 0.8 MB mit topojson auf ca. 0.45 MB mit topojson und 1000 Quantization!
+
+
+Daten hinterlegen (SVG):
+- https://bost.ocks.org/mike/map/
+- https://www.d3indepth.com/geographic/
+- https://www.sohamkamani.com/blog/javascript/2019-02-18-d3-geo-projections-explained/
+
+
+
+
+
+ 
+
+
+
+
+
+
