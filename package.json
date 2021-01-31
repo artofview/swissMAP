@@ -12,5 +12,14 @@
   "dependencies": {
     "shapefile": "^0.6.6",
     "topojson-server": "^3.0.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/artofview/swissMAP.git"
+  },
+  "bugs": {
+    "url": "https://github.com/artofview/swissMAP/issues"
+  },
+  "homepage": "https://github.com/artofview/swissMAP#readme"
 }

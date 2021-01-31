@@ -10,14 +10,19 @@ npm install shapefile
 -> Installierte Package werden im package.json unter "dependencies" mit der aktuellen Version hinterlegt
 -> Die Packages und Dependencies werden in einem neuen Verzeichnis unter "node_modules" im Projektordner abgelegt
 
-3. Ausführen (Debugging starten)
+3.a. Ausführen (Debugging starten) -> kann ich so nicht mehr nachvollziehen
+-> das Ausgabefile (geo.json) wird erstellt 
+
+3.b. Ausführen via Terminal mit:
+node shp2topo.js
 -> das Ausgabefile (geo.json) wird erstellt
 
 4.a. mit mapshaper.org kann die Genauigkeit und damit die Grösse der Datei beinflusst werden
 -> Export auch als TopoJSON möglich!
 
 4.b. mit topojson-Server (Bessere Varianten da kleinere Files und trotzdem Details bestehen bleiben da Redundanzen per Referenz abgelegt werden)
--> npm install topojson-server
+npm install topojson-server
+-> installiert im node_modules das Verzeichnis "topojson-server"
 -> von 1.1 MB auf ca. 0.8 MB mit topojson auf ca. 0.45 MB mit topojson und 1000 Quantization!
 
 

@@ -2,9 +2,10 @@ var fs = require('fs');
 var shapefile = require('shapefile');
 var topojson = require('topojson-server');
 
-// specify the output file here
+// specify the input file here
 const inputFile = 'g2g20.shp'
-const outputFile = 'geo2.json'
+// specify the output file here
+const outputFile = 'geo.json'
 
 shapefile
   .open(inputFile)
